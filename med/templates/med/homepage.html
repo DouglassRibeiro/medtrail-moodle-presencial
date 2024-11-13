@@ -1,24 +1,10 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <title>Página inicial</title>
-</head>
-<body>
+{% extends 'initialheader.html' %}
 
-    <header>
+{% block header %}
 
-        <ul>
-            <li><img src="{%static 'media/images/home.svg'%}" alt=""></li>
-            <li><img src="{%static 'media/images/help_receive.svg'%}" alt=""></li>
-            <li><img src="{%static 'media/images/ask_support.svg'%}" alt=""></li>
-        </ul>
+    <div class="button">
+        <button class="text">Cadastrar</button>
+        <button class="text">Entrar</button>
+    </div>
 
-
-    </header>
-
-</body>
-</html>
+{% endblock header %}
