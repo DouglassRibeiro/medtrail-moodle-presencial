@@ -1,8 +1,7 @@
 from django.urls import path
-
-from med.views import teste,homepage
+from . import views
 
 urlpatterns = [
-    path('homepage/', homepage),
-    path('teste/', teste),
+    path('homepage/', views.homepage),
+    path('homepage_register/', views.homepage_register, name='homepage_register'),
 ]

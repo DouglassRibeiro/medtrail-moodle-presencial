@@ -4,8 +4,8 @@ from django.shortcuts import render
 def homepage(request):
     return render(request, 'med/homepage.html')
 
-def teste(request):
-    return render(request, 'med/teste.html')
+def homepage_register(request):
+    return render(request, 'med/homepage_register.html')
 
 def teste_1(request):
     return render(request, 'med/teste_1.html')
