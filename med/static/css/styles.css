@@ -1,0 +1,28 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #3F3F3F;
+}
+
+header{
+    background-color: red;
+}
+
+header ul{
+    justify-content: center;
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    background-color: blue;
+    padding: 1vh 6vh 1vh 6vh;
+    list-style: none;
+}
+
+header ul li img{
+    background-color: green;
+    width: 10vw;
+    height: 10vh;
+}

@@ -4,12 +4,21 @@
 <head>
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'med /css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <title>Página inicial</title>
 </head>
 <body>
-    <h1>Bem-vindo à sua página Django!</h1>
-    <p>Essa é uma página simples de exemplo.</p>
-    <p>Essa é uma página simples de exemplo.</p>
+
+    <header>
+
+        <ul>
+            <li><img src="{%static 'media/images/home.svg'%}" alt=""></li>
+            <li><img src="{%static 'media/images/help_receive.svg'%}" alt=""></li>
+            <li><img src="{%static 'media/images/ask_support.svg'%}" alt=""></li>
+        </ul>
+
+
+    </header>
+
 </body>
 </html>
