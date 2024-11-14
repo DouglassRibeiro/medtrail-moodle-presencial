@@ -5,24 +5,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/home_page.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
     <title>Página inicial</title>
 </head>
 
 <body>
+    <!--primeiro seleção-->
+    {% block header %}
+    {% endblock header %}
+    <!--fim seleção-->
 
+    <!--Conteúdo da primeira página-->
     <header>
-        <button><img src="{%static 'media/images/home.svg'%}" alt=""></button>
+        <button><a href="{% url 'homepage' %}"><img src="{%static 'media/images/home.svg'%}" alt=""></a></button>
         <button><img src="{%static 'media/images/help_receive.svg'%}" alt=""></button>
         <button><img src="{%static 'media/images/ask_support.svg'%}" alt=""></button>
     </header>
-
-    <div class="button">
-        <button class="text">Cadastrar</button>
-        <button class="text">Entrar</button>
-    </div>
-
-
+    <!--Fim de conteúdo-->
 
 </body>
 

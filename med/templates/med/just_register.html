@@ -1,0 +1,12 @@
+{% extends 'header.html' %}
+{% load static %}
+
+{% block header %}
+
+    <div class="button">
+        <a href="{% url 'homepage_register' %}" class="selection">CPF</a>
+        <a href="{% url 'homepage_register' %}" class="selection">Senha</a>
+        <a href="{% url 'homepage_register' %}" class="selection">Senha</a>
+    </div>
+
+{% endblock header %}
