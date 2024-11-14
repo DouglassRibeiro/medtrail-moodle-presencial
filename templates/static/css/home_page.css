@@ -14,7 +14,7 @@ header{
 
 header button{
     border: none;
-    background-color: transparent;
+    background-color: red;
     padding: 0% 0% 0% 0%;
     cursor: pointer;
     width: 10vw;
@@ -42,7 +42,6 @@ header button img{
     border-radius: 14px;
     border: none;
     background-color: white;
-    cursor: pointer;
 }
 
 .button .text{
@@ -50,4 +49,9 @@ header button img{
     font-weight: bold;
     font-size: 4vh;
     text-align: center;
+}
+
+.button a{
+    text-decoration: none;
+    color: black;
 }
