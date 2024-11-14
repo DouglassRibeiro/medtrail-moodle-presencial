@@ -1,10 +1,10 @@
 {% extends 'headerregister.html' %}
 
 {% block header %}
-
+    
     <div class="button">
-        <button class="text">Cadastre com Ajuda</button>
-        <button class="text">Apenas se Cadastre</button>
+        <a href="{% url 'homepage_register' %}" class="selection">Cadastre com Ajuda</a>
+        <a href="{% url 'homepage_register' %}" class="selection">Apenas se Cadastre</a>
     </div>
 
 {% endblock header %}

@@ -3,8 +3,8 @@
 {% block header %}
 
     <div class="button">
-        <button class="text" ><a href="{% url 'homepage_register' %}">Cadastrar</a></button>
-        <button class="text">Entrar</button>
+        <a href="{% url 'homepage_register' %}" class="selection">Cadastrar</a>
+        <a href="{% url 'homepage_register' %}" class="selection">Entrar</a>
     </div>
 
 {% endblock header %}
