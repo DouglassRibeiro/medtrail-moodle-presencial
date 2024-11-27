@@ -10,18 +10,19 @@
 </head>
 
 <body>
-    <!--primeiro seleção-->
-    {% block header %}
-    {% endblock header %}
-    <!--fim seleção-->
 
-    <!--Conteúdo da primeira página-->
+    <!--cabeçalho da Pagina-->
     <header>
         <button><a href="{% url 'homepage' %}"><img src="{%static 'media/images/home.svg'%}" alt=""></a></button>
         <button><img src="{%static 'media/images/help_receive.svg'%}" alt=""></button>
         <button><img src="{%static 'media/images/ask_support.svg'%}" alt=""></button>
     </header>
-    <!--Fim de conteúdo-->
+    <!--fim do Cabeçalho-->
+
+    <!--primeiro seleção-->
+    {% block header %}
+    {% endblock header %}
+    <!--fim seleção-->
 
 </body>
 
