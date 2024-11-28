@@ -24,9 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-7us_ht08_iey&zb(g!lez3*ix!guqcn*#9=0q)u$(zx=x!$%r)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False #Normal é True para testes
 
-ALLOWED_HOSTS = ['*']
+DEBUG = True #Normal é True para testes
+
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'medtrail.com.br']
 
 
 # Application definition
@@ -105,9 +106,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'UTC-3'
 
 USE_I18N = True
 
@@ -122,6 +123,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'templates/static')
 ]
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'  # Diretório para onde os arquivos serão coletados
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
