@@ -25,9 +25,9 @@ SECRET_KEY = 'django-insecure-7us_ht08_iey&zb(g!lez3*ix!guqcn*#9=0q)u$(zx=x!$%r)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = True #Normal é True para testes
+DEBUG = False #Normal é True para testes
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'medtrail.com.br']
+ALLOWED_HOSTS = ['medtrail.com.br', '127.0.0.1']
 
 
 # Application definition
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'med',
+    'med.apps.MedConfig',
 ]
 
 MIDDLEWARE = [
@@ -108,11 +108,11 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC-3'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_L10N = True
 
 
 # Static files (CSS, JavaScript, Images)
@@ -125,6 +125,9 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'  # Diretório para onde os arquivos serão coletados
+STATIC_URL = '/static/' # Arquivos STATICOS, depois execute o comando python manage.py collectstatic para criar uma pasta com todos os arquivos estaticos do projeto
+
+# python.exe .\manage.py runserver --insecure | não recomendavel mas serve para rodar um servidor usando o próprio localhost
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
