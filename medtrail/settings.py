@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-7us_ht08_iey&zb(g!lez3*ix!guqcn*#9=0q)u$(zx=x!$%r)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = False #Normal é True para testes
+DEBUG = True#False #Normal é True para testes | Quando o DEBUG está definido como False, o Django não serve arquivos estáticos
 
 ALLOWED_HOSTS = ['medtrail.com.br', '127.0.0.1']
 
